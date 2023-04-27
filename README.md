@@ -1,32 +1,32 @@
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  ![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
+# Readme Generator  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
     
 ## Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In order to ease the process of creating a README file for projects, and bypass needing to consistently reviedifferent sites for best practices, a site was created that would incorporate those best practices. This accellerates the process of creating readme files so the developer can focus on more important tasks.
   
 ## Table of Contents 
 
-■ [Installation](#installation) <br/> ■ [Usage](#usage) <br/> ■ [Credits](#credits) <br/> ■ [How to Contribute](#how-to-contribute) <br/> ■ [Testing](#testing) <br/> ■ [Questions](#questions) <br/> ■ [License](#license) <br/>
+■ [Usage](#usage) <br/> ■ [Credits](#credits) <br/> ■ [Testing](#testing) <br/> ■ [Questions](#questions) <br/> ■ [License](#license) <br/>
 
-## Installation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
 
 ## Usage 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+There is no site, this is a terminal driven project. Upon issuing the node index.js command in the appropriate folder, the README generator prompts the user with a series of questions which lead the developer to creating the required README.
 
 ## Credits 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Xandromus, aka, Xander Rapstine, and gachoi06, aka, Grace Choi
 
-## How to Contribute 
+ 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.>
+>
 
 ## Testing 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I tested this project by using console.log commands in the terminal and exhaustively checking 'node index.js' to check for flaws.
 
 ## Questions 
 
@@ -38,7 +38,7 @@ Email: dustin.swecker@gmail.com
   
 ## License
 
-https://opensource.org/licenses/BSD-2-Clause
+https://opensource.org/licenses/MIT
 
-This project uses a BSD 2-Clause "Simplified" License
+This project uses an MIT License
 
