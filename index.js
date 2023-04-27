@@ -1,9 +1,20 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-inquirer.prompt([
+// TODO: Create a function to write README file
+function writeToFile(filename, data) {
+    fs.writeFile(filename, data, (err)=> {
+        err ? console.log(err) : console.log('File successfully generated');
+    })
+    ;
+
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt([
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -45,7 +56,7 @@ inquirer.prompt([
         type: 'list',
         message: 'With which license would you like the project to be covered?',
         name: 'license',
-        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
+        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v3.0', 'Mozilla Public License 2.0', 'The Unlicense']
     },
     {
         type: 'input',
@@ -61,34 +72,20 @@ inquirer.prompt([
         type: 'confirm',
         message: 'Would you like to include a table of contents? Long READMEs are more easily navigated when a table of contents is included.',
         name: 'toc'
+    },
+    {
+        type: 'input',
+        message: 'What do you want to name your READme?',
+        default: 'README.md',
+        name: 'readmename'
     }])
     .then((answers)=> {
         console.log(answers);
-        answersArray= [];
-        answersArray.push(answers.title);
-        answersArray.push(answers.description);
-        answersArray.push(answers.installation);
-        answersArray.push(answers.usage);
-        answersArray.push(answers.credits);
-        answersArray.push(answers.contributions);
-        answersArray.push(answers.test);
-        answersArray.push(answers.license);
-        answersArray.push(answers.githubusername);
-        answersArray.push(answers.email);
-        answersArray.push(answers.toc);
-        console.log(answersArray);
-        fs.writeFile('readmewriter.txt', JSON.stringify(answersArray), (err)=> {
-            err ? console.log(err) : console.log('Readmewriter.txt created!')
+
+        writeToFile(answers.readmename, generateMarkdown(answers));
+        
         });
-    })
-
-// TODO: Create a function to write README file
-function writeToFile(filename, data) {
-
-}
-
-// TODO: Create a function to initialize app
-function init() {}
+    }
 
 // Function call to initialize app
 init();
