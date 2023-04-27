@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Readme gen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinSwecker/Readme-gen.git"
+  },
+  "keywords": [
+    "Readme",
+    "generator"
+  ],
+  "author": "Dustin Swecker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DustinSwecker/Readme-gen/issues"
+  },
+  "homepage": "https://github.com/DustinSwecker/Readme-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
